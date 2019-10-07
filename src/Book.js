@@ -7,6 +7,7 @@ class Book extends React.Component {
     console.log(this.props.book, shelf)
   }
   render() {
+    const imgLinks = this.props.book.imageLinks
     return (
 
       <div className="book">
@@ -16,7 +17,8 @@ class Book extends React.Component {
             style={{
               width: 128,
               height: 193,
-              backgroundImage: `url('${this.props.book.imageLinks.thumbnail}')`
+              backgroundImage: imgLinks ? `url("${imgLinks.thumbnail}")` : 'none'
+
             }}
           ></div>
           <div className="book-shelf-changer">

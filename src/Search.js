@@ -11,13 +11,16 @@ class Search extends React.Component {
   }
   search = (e) => {
     const query = e.target.value;
-    console.log(query)
     if (!query) {
       this.setState({ resulte: [] });
       return;
     }
+
     //-----------------------------
     BooksAPI.search(query).then(resulte => {
+      if (resulte.error) {
+        resulte = [];
+      }
       resulte = resulte.map((book) => {
         const bookInShelf = this.props.books.find(b => b.id === book.id);
         if (bookInShelf) {
