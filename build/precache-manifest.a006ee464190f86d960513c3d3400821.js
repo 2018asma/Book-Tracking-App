@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/books/static/js/runtime~main.7508a2c1.js"
   },
   {
-    "revision": "75d390e5eabc3254418e950df631389b",
-    "url": "/books/static/media/add.75d390e5.svg"
-  },
-  {
     "revision": "20e8847d1eb7759c19b0e30beb8849cf",
     "url": "/books/static/media/arrow-back.20e8847d.svg"
+  },
+  {
+    "revision": "75d390e5eabc3254418e950df631389b",
+    "url": "/books/static/media/add.75d390e5.svg"
   },
   {
     "revision": "9d4e3f366f039249695de85a30a02b95",
